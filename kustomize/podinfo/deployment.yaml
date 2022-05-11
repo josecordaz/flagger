@@ -32,7 +32,7 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
-          containerPort: 9898
+          containerPort: 8080
           protocol: TCP
         - name: http-metrics
           containerPort: 9797
@@ -42,7 +42,7 @@ spec:
           protocol: TCP
         command:
         - ./podinfo
-        - --port=9898
+        - --port=8080
         - --port-metrics=9797
         - --grpc-port=9999
         - --grpc-service-name=podinfo
