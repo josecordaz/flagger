@@ -16,6 +16,7 @@ spec:
   selector:
     matchLabels:
       app: podinfo
+      version: v1
   template:
     metadata:
       annotations:
@@ -23,6 +24,7 @@ spec:
         prometheus.io/port: "9797"
       labels:
         app: podinfo
+        version: v1
     spec:
       containers:
       - name: podinfod
