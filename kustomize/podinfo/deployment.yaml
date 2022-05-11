@@ -4,6 +4,7 @@ metadata:
   name: podinfo
   labels:
     app: podinfo
+    version: v1
 spec:
   minReadySeconds: 5
   revisionHistoryLimit: 5
