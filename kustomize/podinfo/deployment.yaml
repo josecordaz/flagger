@@ -58,7 +58,7 @@ spec:
             - podcli
             - check
             - http
-            - localhost:9898/healthz
+            - localhost:8080/healthz
           initialDelaySeconds: 5
           timeoutSeconds: 5
         readinessProbe:
@@ -67,7 +67,7 @@ spec:
             - podcli
             - check
             - http
-            - localhost:9898/readyz
+            - localhost:8080/readyz
           initialDelaySeconds: 5
           timeoutSeconds: 5
         resources:
